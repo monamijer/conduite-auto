@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/car001.webp" type="image/we" />
+    <link rel="stylesheet" href="style.css" media="all" />
+    <title>Contact - AutoConduitePro</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="logo">🚘 AutoConduitePro</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="historique.html">Historique</a>
+            <a href="cours.html">Cours</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="conseils.html">Conseils</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="search-bar">
+            <input type="search" name="search" id="search" /><button>🔍</button>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-intro">
+            <h1>Contactez-nous</h1>
+            <p>Choisissez une option pour continuer :</p>
+        </section>
+
+        <!-- Toggle boutons -->
+        <div class="form-toggle">
+            <input type="radio" name="form" id="signup-toggle" checked>
+            <label for="signup-toggle" class="toggle-btn"
+                onclick="document.querySelector('.signup-form').style='display:flex'; document.querySelector('.contact-intro').style ='display: none'; document.querySelector('.login-form').style='display:none'; document.querySelector('.comment-form').style='display:none'">S’inscrire</label>
+
+            <input type="radio" name="form" id="login-toggle">
+            <label for="login-toggle" class="toggle-btn"
+                onclick="document.querySelector('.login-form').style='display:flex'; document.querySelector('.contact-intro').style ='display: none'; document.querySelector('.signup-form').style='display:none'; document.querySelector('.comment-form').style='display:none'">Se
+                connecter</label>
+            <input type="radio" name="form" id="comment-toggle">
+            <label for="login-toggle" class="toggle-btn"
+                onclick="document.querySelector('.comment-form').style='display:flex'; document.querySelector('.contact-intro').style ='display: none'; document.querySelector('.signup-form').style='display:none'; document.querySelector('.login-form').style='display:none'">laisser
+                un commentaire</label>
+        </div>
+
+        <!-- Formulaires -->
+        <div class="forms-container">
+            <!-- Formulaire inscription -->
+            <form class="form signup-form">
+                <h2>Inscription</h2>
+                <input type="text" placeholder="Nom complet" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Mot de passe" required>
+                <button type="submit">S’inscrire</button>
+            </form>
+
+            <!-- Formulaire login -->
+            <form class="form login-form">
+                <h2>Connexion</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+      
+            <!-- Formulaire commentaire -->
+            <form class="form comment-form">
+                <h2>Zone de commentaire</h2>
+                <label for="name">Nom complet: </label>
+                <input type="text" name="name" id="name" placeholder="votre nom complet" required>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="votre email" id="email" required>
+                <label for="message">Commentaire:</label>
+                <textarea name="message" id="message" placeholder="laisser un commentaire" rows="10" cols="10   "></textarea>
+                <label for="file">Envoyer un fichier:</label>
+                <input type="file" name="file" id="file" />
+                <button type="submit">Envoyer</button>
+            </form>
+              <div class="email"><a href="mailto:monamijer2005@gmail.com"><button>envoyer un email<img
+                    src="images/communication.png" alt="envoyer un email"></button></a></div>
+
+        </div>
+    </main>
+
+    <footer>
+        <nav class="">
+            <div class="menu">
+                <a href="">Mention legale</a>
+                <a href="">Politique et Confidentialite</a>
+                <a href="">Condition general de vente</a>
+                <a href="">Condition general d'utilisation</a>
+            </div>
+            <div class="menu">
+                <a href="">A propos</a>
+                <a href="">Nos formation</a>
+                <a href="">Tarif</a>
+                <a href="">Avis / Temoignage</a>
+                <a href="">FAQ</a>
+            </div>
+            <div class="menu">
+                <a href="">Assureurs partenaires</a>
+                <a href="">Organisation et financement</a>
+                <a href="">Marques Automobiles </a>
+                <a href="">Acheter une voiture</a>
+                <a href="">Certification qualite </a>
+            </div>
+            <div class="menu">
+                <a href="https://www.facebook.com/profile.php?id=100064694379155"><img src="images/facebook.png"
+                        alt="facebook">Facebook</a>
+                <a href="https://wa.me/message/NDR777Q7ZO3DG1"><img src="images/whatsapp.png"
+                        alt="whatsapp">Whatsapp</a>
+                <a href="https://x.com/JeromeMonami"><img src="images/reseaux-sociaux.png" alt="x">X</a>
+                <a href="https://www.linkedin.com/in/monami-j%C3%A9r%C3%B4me-025038275/"><img src="images/linkedin.png"
+                        alt="linkedin">Linkedin</a>
+                <a href="https://www.instagram.com/monamijerome/"><img src="images/instagram.png"
+                        alt="instagram">Instagram</a>
+            </div>
+        </nav>
+        <p>© 2025 AutoConduitePro | Tous droits réservés.</p>
+    </footer>
+
+
+    </footer>
+
+</body>
+
+</html>
